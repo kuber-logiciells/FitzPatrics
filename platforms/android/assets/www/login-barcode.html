@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login template</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/components.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/uniform.default.css" rel="stylesheet" type="text/css">
+</head>
+ <body> 
+<div class="clearfix">
+<center class="table-advance"><img src="img/logiciells.gif" /></center>
+</div>
+<div class="clearfix">
+ <div class="app">
+            <center class="table-advance"><div id="deviceready" class="alert">
+                <p id="info" class="event received">Device is Ready</p>
+            </div></center>
+            <div class="form-group">
+			<!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+			<label class="control-label visible-ie8 visible-ie9">Username</label>
+			<div class="input-icon">
+				<i class="fa fa-user"></i>
+				<input id="input-barcode" class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="barcode" name="username" disabled>
+			</div>
+		</div>
+            <div class="form-actions" style="margin-left:10px">
+			<a href="" id="scan()"><i class="fa fa-repeat"></i></a>  Retry
+			<button type="submit" class="btn green pull-right" onclick="Login()">
+			Login <i class="m-icon-swapright m-icon-white"></i>
+			</button>
+		</div>
+           </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/login-barcode.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+</div>
+<div id="footer">
+<center><h4>2014 © logiciells</h4></center>
+</div>
+ </body>
+</html>
